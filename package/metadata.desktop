@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Fanspeed Monitor
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Dwardor
+X-KDE-PluginInfo-Email=benjamin.reveille@gmail.com
+X-KDE-PluginInfo-License=GPL2
+X-KDE-PluginInfo-Name=org.kde.fanspeedMonitor
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/dwardor/plasma-applet-fanspeed-monitor
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-RemoteLocation=
+X-KDE-PluginInfo-Category=System Information
+Icon=/usr/share/plasma/plasmoids/org.kde.fanspeedMonitor/contents/images/fan-Icon-made-by-Freepik-from-www.flaticon.com.svg
+#prefix for Icon is: /usr/share/icons/breeze/actions/toolbar/
+#copy this file into ~/.local/share/kservices5
