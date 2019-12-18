@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Fanspeed Monitor
+Comment=Plasmoid for monitoring Fan Speed.
 Type=Service
 X-KDE-ParentApp=
 X-KDE-PluginInfo-Author=Dwardor
@@ -14,5 +15,3 @@ X-Plasma-MainScript=ui/main.qml
 X-Plasma-RemoteLocation=
 X-KDE-PluginInfo-Category=System Information
 Icon=/usr/share/plasma/plasmoids/org.kde.fanspeedMonitor/contents/images/fan-Icon-made-by-Freepik-from-www.flaticon.com.svg
-#prefix for Icon is: /usr/share/icons/breeze/actions/toolbar/
-#copy this file into ~/.local/share/kservices5

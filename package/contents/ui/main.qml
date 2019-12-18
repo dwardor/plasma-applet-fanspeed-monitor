@@ -71,7 +71,7 @@ Item {
         if (!debugLogging) {
             return
         }
-        print('[thermalMonitor] ' + msg)
+        print('[fanspeedMonitor] ' + msg)
     }
 
     onParentWidthChanged: setWidgetSize()

@@ -14,4 +14,4 @@ find_package(KF5Plasma)
 
 add_subdirectory(translations)
 
-plasma_install_package(package org.kde.thermalMonitor)
+plasma_install_package(package org.kde.fanspeedMonitor)
