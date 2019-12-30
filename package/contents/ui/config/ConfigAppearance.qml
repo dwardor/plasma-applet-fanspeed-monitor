@@ -80,9 +80,9 @@ Item {
         }
         
         Item {
-            width: 3
+            width: 2
             height: 10
-            Layout.columnSpan: 2
+            Layout.columnSpan: 3
         }
         
         CheckBox {
