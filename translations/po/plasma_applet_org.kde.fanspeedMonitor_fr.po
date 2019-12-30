@@ -32,19 +32,23 @@ msgstr "Apparence"
 msgid "Misc"
 msgstr "Divers"
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:18
+#: ../package/contents/ui/config/ConfigAppearance.qml:19
 msgid "Alias font size:"
 msgstr "Taille de la police Alias :"
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:30
+#: ../package/contents/ui/config/ConfigAppearance.qml:35
 msgid "Fan Speed font size:"
 msgstr "Taille de la police Vitesse Ventilateur :"
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:42
+#: ../package/contents/ui/config/ConfigAppearance.qml:51
 msgid "Fan Speed right margin:"
 msgstr "Marge droite de Vitesse Ventilateur :"
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:62
+#: ../package/contents/ui/config/ConfigAppearance.qml:67
+msgid "Width to Height Ratio:"
+msgstr "Rapport Largeur/Hauteur:"
+
+#: ../package/contents/ui/config/ConfigAppearance.qml:91
 msgid "Enable label drop shadow"
 msgstr "Activer l'ombre d'estompage d'étiquette"
 

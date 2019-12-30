@@ -6,11 +6,12 @@ Item {
     
     property alias cfg_aliasFontSize: aliasFontSize.value
     property alias cfg_fanspeedFontSize: fanspeedFontSize.value
+    property alias cfg_fanspeedWidthToHeightRatio: fanspeedWidthToHeightRatio.value
     property alias cfg_fanspeedRightMargin: fanspeedRightMargin.value
     property alias cfg_enableLabelDropShadow: enableLabelDropShadow.checked
     
     GridLayout {
-        columns: 2
+        columns: 3
         anchors.left: parent.left
         anchors.right: parent.right
         
@@ -25,7 +26,11 @@ Item {
             maximumValue: 100
             Layout.fillWidth: true
         }
-        
+        Label {
+            text: aliasFontSize.value
+            Layout.alignment: Qt.AlignLeft
+        }
+
         Label {
             text: i18n('Fan Speed font size:')
             Layout.alignment: Qt.AlignRight
@@ -36,6 +41,10 @@ Item {
             minimumValue: 2
             maximumValue: 100
             Layout.fillWidth: true
+        }
+        Label {
+            text: fanspeedFontSize.value
+            Layout.alignment: Qt.AlignLeft
         }
         
         Label {
@@ -49,16 +58,36 @@ Item {
             maximumValue: 80
             Layout.fillWidth: true
         }
+        Label {
+            text: fanspeedRightMargin.value
+            Layout.alignment: Qt.AlignLeft
+        }
+
+        Label {
+            text: i18n('Width to Height Ratio:')
+            Layout.alignment: Qt.AlignRight
+        }
+        Slider {
+            id: fanspeedWidthToHeightRatio
+            stepSize: 0.1
+            minimumValue: 0.3
+            maximumValue: 3.0
+            Layout.fillWidth: true
+        }
+        Label {
+            text: fanspeedWidthToHeightRatio.value
+            Layout.alignment: Qt.AlignLeft
+        }
         
         Item {
-            width: 2
+            width: 3
             height: 10
             Layout.columnSpan: 2
         }
         
         CheckBox {
             id: enableLabelDropShadow
-            Layout.columnSpan: 2
+            Layout.columnSpan: 3
             text: i18n('Enable label drop shadow')
         }
     }

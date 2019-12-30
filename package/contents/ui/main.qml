@@ -49,6 +49,7 @@ Item {
     property double aliasFontSize: itemHeight * plasmoid.configuration.aliasFontSize * 0.01
     property double fanspeedFontSize: itemHeight * plasmoid.configuration.fanspeedFontSize * 0.01
     property double fanspeedRightMargin: itemHeight * plasmoid.configuration.fanspeedRightMargin * 0.01
+    property double fanspeedWidthToHeightRatio: plasmoid.configuration.fanspeedWidthToHeightRatio
     property bool enableLabelDropShadow: plasmoid.configuration.enableLabelDropShadow
 
     property var systemmonitorSourcesToAdd: []
@@ -76,6 +77,7 @@ Item {
     onParentWidthChanged: setWidgetSize()
     onParentHeightChanged: setWidgetSize()
     onNumberOfPartsChanged: setWidgetSize()
+    onFanspeedWidthToHeightRatioChanged: setWidgetSize()
 
     function setWidgetSize() {
         if (!parentHeight) {
@@ -94,7 +96,7 @@ Item {
             itemWidth = parentHeight
         }
         itemHeight = itemWidth
-        itemWidth = itemHeight*1.6
+        itemWidth = itemHeight*fanspeedWidthToHeightRatio
         widgetWidth = orientationVertical ? itemWidth : numberOfParts * itemWidth + (numberOfParts-1) * itemMargin
         widgetHeight = orientationVertical ? numberOfParts * itemHeight + (numberOfParts-1) * itemMargin : itemHeight
     }

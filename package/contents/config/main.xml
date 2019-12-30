@@ -18,6 +18,9 @@
         <entry name="fanspeedFontSize" type="Int">
             <default>46</default>
         </entry>
+        <entry name="fanspeedWidthToHeightRatio" type="Double">
+            <default>1.6</default>
+        </entry>
         <entry name="fanspeedRightMargin" type="Int">
             <default>0</default>
         </entry>
