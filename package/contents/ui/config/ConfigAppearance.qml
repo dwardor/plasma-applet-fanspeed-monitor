@@ -75,7 +75,7 @@ Item {
             Layout.fillWidth: true
         }
         Label {
-            text: fanspeedWidthToHeightRatio.value
+            text: (fanspeedWidthToHeightRatio.value).toFixed(1)
             Layout.alignment: Qt.AlignLeft
         }
         
