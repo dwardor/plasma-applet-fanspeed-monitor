@@ -6,6 +6,9 @@ Coding very largely based off of Kotelnik's https://github.com/kotelnik/plasma-a
 
 Original Icon is Fan Icon made by Freepik from www.flaticon.com (https://www.flaticon.com/free-icon/fan_22846) before changing the colors.
 
+### BUILD DEPENDENCIES 
+cmake, make, extra-cmake-modules
+
 
 ### INSTALLATION
 
