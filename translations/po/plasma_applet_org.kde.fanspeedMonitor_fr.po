@@ -46,9 +46,13 @@ msgstr "Marge droite de Vitesse Ventilateur :"
 
 #: ../package/contents/ui/config/ConfigAppearance.qml:67
 msgid "Width to Height Ratio:"
-msgstr "Rapport Largeur/Hauteur:"
+msgstr "Rapport Largeur/Hauteur :"
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:91
+#: ../package/contents/ui/config/ConfigAppearance.qml:83
+msgid "Nvidia GPU fan speed [rpm] when at 100%:"
+msgstr "Vitesse Ventilateur GPU Nvidia [tr/min] quand à 100% :"
+
+#: ../package/contents/ui/config/ConfigAppearance.qml:107
 msgid "Enable label drop shadow"
 msgstr "Activer l'ombre d'estompage d'étiquette"
 

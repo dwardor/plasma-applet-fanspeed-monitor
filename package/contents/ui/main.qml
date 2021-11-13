@@ -50,6 +50,7 @@ Item {
     property double fanspeedFontSize: itemHeight * plasmoid.configuration.fanspeedFontSize * 0.01
     property double fanspeedRightMargin: itemHeight * plasmoid.configuration.fanspeedRightMargin * 0.01
     property double fanspeedWidthToHeightRatio: plasmoid.configuration.fanspeedWidthToHeightRatio
+    property int fanspeedNvidiaGPUMaxRpm: plasmoid.configuration.fanspeedNvidiaGPUMaxRpm
     property bool enableLabelDropShadow: plasmoid.configuration.enableLabelDropShadow
 
     property var systemmonitorSourcesToAdd: []
@@ -290,7 +291,8 @@ Item {
             if (data['exit code'] > 0) {
                 dbgprint('new data error: ' + data.stderr)
             } else {
-                fanspeed = parseFloat(data.stdout) * maxspeed/100
+                /* if user sets fanspeedNvidiaGPUMaxRpm to something other than the defaut value of 100 than fanspeed will be converted to rpm */
+                fanspeed = parseFloat(data.stdout) * fanspeedNvidiaGPUMaxRpm/100
             }
 
             ModelUtils.updateFanspeedModel(fanspeedModel, 'nvidia-smi', fanspeed)

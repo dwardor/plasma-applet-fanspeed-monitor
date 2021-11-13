@@ -45,7 +45,11 @@ msgstr ""
 msgid "Width to Height Ratio:"
 msgstr ""
 
-#: ../package/contents/ui/config/ConfigAppearance.qml:91
+#: ../package/contents/ui/config/ConfigAppearance.qml:83
+msgid "Nvidia GPU fan speed [rpm] when at 100%:"
+msgstr ""
+
+#: ../package/contents/ui/config/ConfigAppearance.qml:107
 msgid "Enable label drop shadow"
 msgstr ""
 

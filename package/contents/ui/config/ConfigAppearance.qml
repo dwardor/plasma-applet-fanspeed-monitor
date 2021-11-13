@@ -8,6 +8,7 @@ Item {
     property alias cfg_fanspeedFontSize: fanspeedFontSize.value
     property alias cfg_fanspeedWidthToHeightRatio: fanspeedWidthToHeightRatio.value
     property alias cfg_fanspeedRightMargin: fanspeedRightMargin.value
+    property alias cfg_fanspeedNvidiaGPUMaxRpm: fanspeedNvidiaGPUMaxRpm.value
     property alias cfg_enableLabelDropShadow: enableLabelDropShadow.checked
     
     GridLayout {
@@ -79,6 +80,22 @@ Item {
             Layout.alignment: Qt.AlignLeft
         }
         
+        Label {
+            text: i18n('Nvidia GPU fan speed [rpm] when at 100%:')
+            Layout.alignment: Qt.AlignRight
+        }
+        Slider {
+            id: fanspeedNvidiaGPUMaxRpm
+            stepSize: 50
+            minimumValue: 100
+            maximumValue: 4000
+            Layout.fillWidth: true
+        }
+        Label {
+            text: fanspeedNvidiaGPUMaxRpm.value
+            Layout.alignment: Qt.AlignLeft
+        }
+
         Item {
             width: 2
             height: 10

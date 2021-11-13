@@ -178,7 +178,7 @@ Item {
         columns: 2
         
         Label {
-            text: i18n('Plasmoid version: ') + '1.1.1'
+            text: i18n('Plasmoid version: ') + '1.1.2'
             Layout.alignment: Qt.AlignRight
             Layout.columnSpan: 2
         }
@@ -350,7 +350,7 @@ Item {
         id: atiDS
         engine: 'executable'
         
-        connectedSources: [ 'aticonfig --pplib-cmd "get fanspeed 0" | grep Result | sed -e "s/.*: *//" -e "s/%//"' ]
+        connectedSources: [ 'aticonfig --pplib-cmd "get fanspeed 0"' ]
         
         property bool prepared: false
         
