@@ -43,6 +43,7 @@ Item {
             font.pixelSize: aliasFontSize
             font.pointSize: -1
             verticalAlignment: Text.AlignTop
+            horizontalAlignment: Text.AlignHCenter
 
             text: alias
         }
@@ -58,6 +59,7 @@ Item {
             font.pixelSize: fanspeedFontSize * (isOff ? 0.7 : 1)
             font.pointSize: -1
             verticalAlignment: Text.AlignBottom
+            horizontalAlignment: Text.AlignHCenter
 
             opacity: isOff ? 0.7 : 1
 
