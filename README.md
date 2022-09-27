@@ -7,7 +7,10 @@ Coding very largely based off of Kotelnik's https://github.com/kotelnik/plasma-a
 Original Icon is Fan Icon made by Freepik from www.flaticon.com (https://www.flaticon.com/free-icon/fan_22846) before changing the colors.
 
 ### BUILD DEPENDENCIES 
-cmake, make, extra-cmake-modules
+cmake, make, extra-cmake-modules, plasma-dev (or plasma-framework-devel or whatever your distro calls it)
+
+### RUN DEPENDENCIES
+ksysguard (or else no sensors are available)
 
 
 ### INSTALLATION
