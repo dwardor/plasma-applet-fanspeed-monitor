@@ -326,26 +326,25 @@ Item {
         connectedSources: [ 'nvidia-smi --query-gpu=fan.speed --format=csv,noheader' ]
         
         property bool prepared: false
-        
         onNewData: {
-            nvidiaDS.connectedSources.length = 0
-            
-            if (data['exit code'] > 0) {
+            if (!prepared)
+            {
+                //nvidiaDS.connectedSources.length = 0
+                if (data['exit code'] > 0) {
+                    prepared = true
+                    return
+                }
+                
+                comboboxModel.append({
+                    text: 'nvidia-smi',
+                    val: 'nvidia-smi'
+                })
                 prepared = true
-                return
             }
-            
-            comboboxModel.append({
-                text: 'nvidia-smi',
-                val: 'nvidia-smi'
-            })
-            
-            prepared = true
         }
-        
-        interval: 500
+        //interval: 500
     }
-    
+
     PlasmaCore.DataSource {
         id: atiDS
         engine: 'executable'
@@ -353,24 +352,22 @@ Item {
         connectedSources: [ 'aticonfig --pplib-cmd "get fanspeed 0"' ]
         
         property bool prepared: false
-        
         onNewData: {
-            atiDS.connectedSources.length = 0
-            
-            if (data['exit code'] > 0) {
+            if (!prepared)
+            {
+                //atiDS.connectedSources.length = 0
+                if (data['exit code'] > 0) {
+                    prepared = true
+                    return
+                }
+                
+                comboboxModel.append({
+                    text: 'aticonfig',
+                    val: 'aticonfig'
+                })
                 prepared = true
-                return
             }
-            
-            comboboxModel.append({
-                text: 'aticonfig',
-                val: 'aticonfig'
-            })
-            
-            prepared = true
         }
-        
-        interval: 500
+        //interval: 500
     }
-    
 }
