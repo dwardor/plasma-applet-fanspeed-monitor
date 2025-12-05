@@ -1,3 +1,5 @@
+This is deprecated. For Plama 6 go see: [https://invent.kde.org/dwardor/fanspeedmonitor](https://invent.kde.org/dwardor/fanspeedmonitor)
+
 Fan Speed Monitor
 ---------------
 Plasma 5 applet for monitoring Fan Speed sensors.
